@@ -60,3 +60,118 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Lab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: white;
+        }
+
+        /* Header Styling */
+        .header {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #00ff88, #00a3ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Modern Button Style */
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(45deg, #00ff88, #00a3ff);
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Headset Design (CSS Art) */
+        .headset {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 2rem;
+            background: #333;
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .headset::after {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 20px;
+            background: #444;
+            top: -15px;
+            left: -10%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">AI Voice Lab</div>
+        <nav>
+            <button class="btn">Try Free</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Next-gen AI Voice Synthesis</h1>
+        <p>Convert text to natural sounding speech in any voice</p>
+        
+        <!-- Headset Design -->
+        <div class="headset"></div>
+
+        <button class="btn">Start Free Trial</button>
+    </section>
+
+    <script>
+        // Basic Interactions
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Feature coming soon!');
+            });
+        });
+    </script>
+</body>
+</html>
