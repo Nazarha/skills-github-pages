@@ -22,3 +22,11 @@ function convertTextToSpeech() {
     // Speak the text
     window.speechSynthesis.speak(utterance);
 }
+// This function simulates the generation of AI content
+function generateContent() {
+  // Simulating an API call to generate content
+  const generatedText = "This is the AI-generated content. You can replace this with actual API data!";
+  
+  // Displaying the generated content on the page
+  document.getElementById("generated-content").innerHTML = generatedText;
+}
